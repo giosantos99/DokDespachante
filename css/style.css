@@ -1,0 +1,209 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans;
+  max-width: 2500px;
+}
+
+:root {
+  --red1: #E12C30;
+  --red2: #CE282B;
+  --grey: #676767;
+  --white: #ffffff;
+  --accent: #F9F9F9
+  --green: #00f800;
+}
+
+body {
+  background-color: var(--accent);
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.logo {
+  max-width: 130px;
+}
+
+.video {
+  width: 100%;
+  max-width: 550px;
+  height: 250px;
+}
+
+main {
+  background-image: url('../assets/capa.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+main img {
+  max-width: 300px;
+  padding-top: 20px;
+}
+
+main p {
+  color: var(--red1);
+  font-size: 3.75rem;
+  font-weight: 800;
+  padding-top: 25px;
+}
+
+main button {
+  min-height: 50px;
+  border-radius: 50px;
+  border: none;
+  color: var(--white);
+  font-size: 1.60rem;
+  font-weight: 700;
+}
+
+form {
+  background: var(--red2);
+}
+
+form button {
+  min-height: 71px;
+  border-radius: 50px;
+  border: none;
+  color: var(--white);
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+input {
+  min-height: 65px;
+}
+
+.title {
+  color: var(--grey);
+  font-size: 2.625rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.description {
+  text-align: justify;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.img-section {
+  width: 100%;
+}
+
+.bg-green {
+  background: linear-gradient(90deg, #12D01A 0%, #12D01A 100%);
+}
+
+.bg-green:hover {
+  filter: contrast(1.5);
+}
+
+.bg-red {
+  background: var(--red1);
+  color: var(--white);
+}
+
+.text-red {
+  color: var(--red1);
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+svg {
+  max-width: 95px;
+  min-width: 95px;
+  padding: 10px;
+}
+
+.cards {
+  max-width: 600px;
+  min-height: 220px;
+  background: var(--accent);
+  border-radius: 21.325px;
+  padding: 20px 10px;
+}
+
+.text-card {
+  color: var(--grey);
+  font-size: 1.70rem;
+  text-align: center;
+}
+
+
+footer button {
+  min-height: 88px;
+  border-radius: 50px;
+  border: none;
+  color: var(--white);
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+
+  main p {
+    order: 2;
+    padding-top: 10px;
+  }
+
+  main button {
+    order: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  main p {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.70rem;
+  }
+
+  .description {
+    font-size: 1.50rem;
+  }
+
+  footer button {
+    font-size: 1rem;
+    min-height: 45px;
+  }
+
+  form button {
+    min-height: 45px;
+    font-size: 1rem;
+  }
+}
