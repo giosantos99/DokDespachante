@@ -1,4 +1,4 @@
-Desafio de uma landing page proposto pela empresa Dok Despachante.
+Desafio de uma landing page proposta pela empresa Dok Despachante.
 
 Linguagens utilizadas: HTML5, CSS3, JavaScript, Bootstrap e Axios.
 
